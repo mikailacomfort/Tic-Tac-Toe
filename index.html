@@ -7,46 +7,46 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Autour+One&family=Montserrat:wght@100&family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src=scripts.js defer></script>
-   </head>
+  </head>
   
-   <body>
+  <body>
     <div class="container">
       <div class="intro">
         <h1>Welcome to <span class="tic">Tic</class><span class="tac">Tac</class><span class="toe">Toe</class></h1>
-        <h2>Get Ready To Play!</h2>
-        <!-- uses the built-in onclick attribute to call the resetBoard function -->
-      </div><!--close intro-->
-      <table>
-        <tr>
-          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
-          <td id='0-0' onclick="handleClick(this)"></td>
-          <td id='0-1' onclick="handleClick(this)"></td>
-          <td id='0-2' onclick="handleClick(this)"></td>
+          <h2>Get Ready To Play!</h2>
+          <!-- uses the built-in onclick attribute to call the resetBoard function -->
+        </div><!--close intro-->
+        <table>
+          <tr>
+            <!-- the onclick calls a function called "handleClick" and passes itself to it -->
+            <td id='0-0' onclick="handleClick(this)"></td>
+            <td id='0-1' onclick="handleClick(this)"></td>
+            <td id='0-2' onclick="handleClick(this)"></td>
           </tr>
-
+          
           <tr>
             <td id='1-0' onclick="handleClick(this)"></td>
             <td id='1-1' onclick="handleClick(this)"></td>
             <td id='1-2' onclick="handleClick(this)"></td>
-
+            
           </tr>
-  
+          
           <tr>
             <td id='2-0' onclick="handleClick(this)"></td>
             <td id='2-1' onclick="handleClick(this)"></td>
             <td id='2-2' onclick="handleClick(this)"></td>
-        </tr>
+          </tr>
         </table>
-       
+        
         <footer>
           <button onclick="resetBoard()" type="button" class="btn btn-primary btn-lg" name="button">Restart</button>
         </footer>
-
+        
         <!-- @TODO create new rows and cells for the rest of your TTT board. -->
         <!-- @TODO give each new cell an id & an event listener to call the "handleClick" function -->
+        
+      </div><!--close container-->
       
-    </div><!--close container-->
-    
-  </body>
-</html>
+    </body>
+    <script src=scripts.js defer></script>
+    </html>
