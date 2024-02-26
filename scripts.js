@@ -37,7 +37,12 @@ const resetBoard = () => {
   for (i=0; i < squares.length; i++) {
     console.log(squares[i].id)
     squares[i].innerHTML = null
-  }  
+  } 
+  board = [
+  ["","",""],
+  ["","",""],
+  ["","",""]
+] 
 }
 
 const checkForWin = () => {
